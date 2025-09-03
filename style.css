@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+.button {
+  background: #49a7e6;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #012169;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #012169;
+}
+
+.header {
+  background-color: #012169;
+  position: fixed;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__brand {
+  width: 6rem;
+  height: 3rem;
+  border: 1px solid white;
+}
+
+.nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+
+.nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav__item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.nav__item a:hover,
+.nav__item a:active {
+  color: #49a7e6;
+  border-bottom: 2px solid white;
+}
+
+.footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link a:hover,
+.footer__link a:active {
+  color: #ccc;
+}
+
+#overview {
+  background-image: url("./images/australia.jpg");
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+.section-title {
+  color: #012169;
+  text-align: center;
+}
+
+.option-title {
+  color: #012169;
+  text-align: center;
+}
+
+#key-highlights {
+  background: #49a7e6;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-highlights .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-highlights__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-highlight {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-highlight__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-highlight__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
