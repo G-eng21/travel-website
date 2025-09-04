@@ -16,17 +16,23 @@
     <!-- Custom Nav Bar - alignment TODO -->
     <header class="header">
       <div>
-        <img src="./images/flag.png" class="header__brand" />
+        <a href="index.html" class="header__brand">
+          <img
+            class="header__icon"
+            src="./images/flag.png"
+            alt="Australian flag"
+          />
+        </a>
       </div>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="">Holiday Plans</a>
+      <nav class="header-nav">
+        <ul class="header-nav__items">
+          <li class="header-nav__item header-nav__item--cta">
+            <a href="">Book Your Trip</a>
           </li>
-          <li class="nav__item">
-            <a href="">Customer Contacts</a>
+          <li class="header-nav__item">
+            <a href="">Contact Us</a>
           </li>
-          <li class="nav__item">
+          <li class="header-nav__item">
             <a href="">FAQs</a>
           </li>
         </ul>
@@ -35,11 +41,11 @@
     <main>
       <!-- Section to overlay background image - TODO formatting/positioning -->
       <section id="overview">
-        <h2>What are you waiting for?</h2>
+        <h1>What are you waiting for?</h1>
       </section>
 
       <section id="plans">
-        <h2 class="section-title">Holiday Plans</h2>
+        <!-- <h2 class="section-title">Holiday Plans</h2> -->
         <!-- Bootstrap card components  -->
         <div class="d-flex justify-content-evenly p-2">
           <div class="card" style="width: 24rem">
