@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: 2px red solid;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   left: 0;
   background: #012169;
   padding: 0.5rem 1rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header > div {
@@ -141,19 +142,6 @@ body {
   left: 3%;
 }
 
-/* #overview {
-  background-image: url("./images/australia.jpg");
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  opacity: 0.8;
-} */
-
-#plans {
-  position: relative;
-  top: 10%;
-}
-
 .section-title {
   color: #012169;
   text-align: center;
@@ -162,6 +150,62 @@ body {
 .option-title {
   color: #012169;
   text-align: center;
+}
+
+#plans {
+  position: relative;
+  top: 10%;
+}
+
+.plans__modal {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  min-height: 250px;
+  position: absolute;
+  top: 20%;
+  border: 1px solid #012169;
+  border-radius: 15px;
+  z-index: 5;
+}
+
+.plans__button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+.plans__btn--open {
+  position: absolute;
+  bottom: 15opx;
+}
+
+.plans__btn--close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.plans__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
 }
 
 #key-highlights {

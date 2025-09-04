@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Putting it Together - Part 1</title>
-    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Custom Nav Bar - alignment TODO -->
@@ -101,6 +101,17 @@
           </div>
         </div>
       </section>
+
+      <section class="plans__modal hidden">
+        <div class="d-flex">
+          <img src="./images/map.jpeg" alt="expanded map Australia" />
+          <button class="plans__btn--close">x</button>
+        </div>
+        <!-- Add input button? -->
+      </section>
+      <div class="plans__overlay hidden"></div>
+      <button class="plans__button plans__btn--open">Explore</button>
+
       <!-- User defined key highlights section -->
       <section id="key-highlights">
         <h2 class="section-title">Key Highlights</h2>
