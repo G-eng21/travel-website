@@ -39,21 +39,22 @@
       </nav>
     </header>
     <main class="contact-page">
-      <div class="plan-container">
-        <h1 class="contact-title">
-          Plan your trip...where would you like to go?
-        </h1>
-        <p class="contact-text">
-          Build your itinerary from our list of destinations.
-        </p>
-      </div>
+      <h1 class="contact-title">
+        Plan your trip...where would you like to go?
+      </h1>
+      <p class="contact-text">
+        Build your itinerary from our list of destinations.
+      </p>
+      <!-- TODO - convert the following header, table and list to CSS grid -->
       <div class="plan-container">
         <div>
-          <h2>Destinations</h2>
-          <p>Highlight a destination and press Enter to add to your choices:</p>
+          <h2 class="plan-heading">Destinations</h2>
+          <p>
+            Click on a destination and press Enter to add to your Itinerary:
+          </p>
         </div>
         <div>
-          <h2>Choices</h2>
+          <h2 class="plan-heading">Itinerary</h2>
           <p>Press the button to save your choices:</p>
         </div>
       </div>
@@ -64,11 +65,11 @@
               <tr>
                 <th width="10%">Location</th>
                 <th width="25%">Territory</th>
-                <th width="15%">Explore</th>
+                <!-- <th width="15%">Explore</th> -->
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -80,9 +81,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -94,9 +95,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -108,9 +109,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -122,9 +123,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -136,9 +137,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -150,9 +151,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -164,9 +165,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -178,9 +179,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -192,9 +193,9 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
-              <tr>
+              <tr class="plan-table__row">
                 <td>
                   <input
                     id="dest1"
@@ -206,7 +207,7 @@
                   />
                 </td>
                 <td class="plan-table__item--territory">territory</td>
-                <td class="plan-table__item--explore">url</td>
+                <!-- <td class="plan-table__item--explore">url</td> -->
               </tr>
             </tbody>
           </table>
@@ -226,22 +227,25 @@
           </ul> -->
         </div>
         <div>
-          <ul class="plan-choices">
-            <li class="plan-choices__item hidden">Choice 1</li>
-            <li class="plan-choices__item hidden">Choice 2</li>
-            <li class="plan-choices__item hidden">Choice 3</li>
-            <li class="plan-choices__item hidden">Choice 4</li>
-            <li class="plan-choices__item hidden">Choice 5</li>
-            <li class="plan-choices__item hidden">Choice 6</li>
-            <li class="plan-choices__item hidden">Choice 7</li>
-            <li class="plan-choices__item hidden">Choice 8</li>
-            <li class="plan-choices__item hidden">Choice 9</li>
-            <li class="plan-choices__item hidden">Choice 10</li>
+          <ul class="plan-itinerary">
+            <li class="plan-itinerary__item hidden">Choice 1</li>
+            <li class="plan-itinerary__item hidden">Choice 2</li>
+            <li class="plan-itinerary__item hidden">Choice 3</li>
+            <li class="plan-itinerary__item hidden">Choice 4</li>
+            <li class="plan-itinerary__item hidden">Choice 5</li>
+            <li class="plan-itinerary__item hidden">Choice 6</li>
+            <li class="plan-itinerary__item hidden">Choice 7</li>
+            <li class="plan-itinerary__item hidden">Choice 8</li>
+            <li class="plan-itinerary__item hidden">Choice 9</li>
+            <li class="plan-itinerary__item hidden">Choice 10</li>
           </ul>
         </div>
-        <div>
-          <button type="submit" class="button" disabled>Save choices</button>
-        </div>
+      </div>
+      <!-- TODO fix the button formatting to return to normal after it is pressed -->
+      <div class="plan-button">
+        <button type="submit" id="save-itinerary" class="button" disabled>
+          Save choices
+        </button>
       </div>
     </main>
     <!-- User defined footer -->
