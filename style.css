@@ -170,8 +170,8 @@ body {
 .plans__modal {
   display: flex;
   justify-content: center;
-  width: 400px;
-  min-height: 250px;
+  width: 800px;
+  min-height: 400px;
   position: absolute;
   top: 20%;
   border: 1px solid #012169;
