@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* border: 1px red solid; */
 }
 
 body {
@@ -162,16 +163,20 @@ body {
   text-align: center;
 }
 
+.image-overlay {
+  position: relative;
+}
+
 #plans {
   position: relative;
-  top: 10%;
+  top: 20%;
 }
 
 .plans__modal {
   display: flex;
   justify-content: center;
-  width: 800px;
-  min-height: 400px;
+  width: 1200px;
+  min-height: 600px;
   position: absolute;
   top: 20%;
   border: 1px solid #012169;
@@ -179,14 +184,19 @@ body {
   z-index: 5;
 }
 
+.itinerary-button {
+  position: absolute;
+}
+
 .plans__button {
   display: inline-block;
-  padding: 0.8rem 1.4rem;
+  padding: 0.6rem 1.2rem;
   font-weight: 700;
   background-color: black;
   color: white;
   text-align: center;
   font-size: 1em;
+  border-radius: 15px;
 }
 
 .plans__btn--open {
@@ -196,9 +206,12 @@ body {
 
 .plans__btn--close {
   transform: translate(10px, -20px);
-  padding: 0.5rem 0.7rem;
-  background: #eee;
+  /* padding: 0.5rem 0.7rem; */
+  background: #000;
+  color: white;
   border-radius: 50%;
+  height: 2rem;
+  width: 5rem;
 }
 
 .plans__overlay {
