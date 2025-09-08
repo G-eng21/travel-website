@@ -106,8 +106,8 @@ body {
 
 .footer {
   background: black;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .footer__links {
@@ -191,7 +191,7 @@ body {
 
 .plans__btn--open {
   position: absolute;
-  bottom: 15opx;
+  bottom: 15px;
 }
 
 .plans__btn--close {
@@ -351,6 +351,14 @@ body {
 .plan-table__item input:hover,
 .plan-table__item input:active {
   background: lightgreen;
+}
+
+.plan-button {
+  text-align: center;
+}
+
+#save-itinerary {
+  margin-top: 1rem;
 }
 
 @media (min-width: 40rem) {
