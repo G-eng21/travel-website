@@ -26,6 +26,9 @@
       </div>
       <nav class="header-nav">
         <ul class="header-nav__items">
+          <li class="header-nav__item">
+            <a href="./index.html">Home</a>
+          </li>
           <li class="header-nav__item header-nav__item--current">
             <a href="./form.html">Register</a>
           </li>
@@ -43,7 +46,12 @@
       <p class="contact-text">
         Please provide the following to set up an account:
       </p>
-      <form action="index.html" class="contact-form" netlify>
+      <form
+        action="index.html"
+        class="contact-form"
+        method="POST"
+        data-netlify="true"
+      >
         <label for="title">Title</label>
         <select id="title">
           <option value="mr">...</option>

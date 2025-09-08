@@ -41,7 +41,7 @@ let index = 0;
 for (const destination of destinations) {
   destinationList[index].value = destination.location;
   territoryList[index].textContent = destination.territory;
-  exploreList[index].textContent = destination.photo;
+  // exploreList[index].textContent = destination.photo;
   index++;
 }
 
@@ -54,7 +54,7 @@ document.addEventListener("keyup", (event) => {
   const keyName = event.key;
 
   if (keyName === "Enter") {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     itineraryChoices.push(event.target.value);
     // for (let index2 = 0; index2 <= destinationList.length; index2++) {
     let index2 = 0;
