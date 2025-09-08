@@ -46,9 +46,14 @@
       <p class="contact-text">
         Please provide the following to set up an account:
       </p>
-      <form class="contact-form" method="POST" data-netlify="true">
+      <form
+        name="register"
+        class="contact-form"
+        method="POST"
+        data-netlify="true"
+      >
         <label for="title">Title</label>
-        <select id="title">
+        <select id="title" name="title">
           <option value="mr">...</option>
           <option value="mr">Mr.</option>
           <option value="mrs">Mrs.</option>
@@ -56,29 +61,48 @@
           <option value="dr">Dr.</option>
         </select>
         <label for="first-name">First name</label>
-        <input type="text" id="first-name" class="invalid" required />
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          class="invalid"
+          required
+        />
         <label for="last-name">Last name</label>
-        <input type="text" id="last-name" class="invalid" required />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          class="invalid"
+          required
+        />
         <label for="email">E-Mail</label>
         <input
           type="email"
           id="email"
+          name="email"
           class="invalid"
           pattern="/\@/"
           placeholder="e.g. firstname.surname@gmail.com"
           required
         />
         <label for="password">Password</label>
-        <input type="password" id="password" class="invalid" required />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="invalid"
+          required
+        />
         <div class="contact-checkbox">
           <label for="agree-terms"
             >Agree to
             <a href="#">Terms &amp; Conditions</a>
           </label>
-          <input type="checkbox" id="agree-terms" />
+          <input type="checkbox" id="agree-terms" name="agree-terms" />
         </div>
 
-        <button type="submit" class="button">Sign Up</button>
+        <button type="submit" class="button" name="sign-up">Sign Up</button>
       </form>
     </main>
     <!-- User defined footer -->
