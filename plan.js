@@ -69,6 +69,8 @@ document.addEventListener("keyup", (event) => {
       index2++;
     }
 
+    // Loop through to add choices to the itinerary
+
     let index3 = 0;
 
     if (itineraryChoices) {
