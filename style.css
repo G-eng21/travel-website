@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 2px red solid;
 }
 
 body {
@@ -23,6 +22,13 @@ body {
 .button:active {
   background: white;
   color: #012169;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  border: darkgray;
+  background: darkgray;
+  color: gray;
 }
 
 .header {
@@ -246,4 +252,91 @@ body {
   font-weight: bold;
   color: white;
   font-size: 20px;
+}
+
+/* Styling for the Contact Form */
+
+.contact-page {
+  padding-top: 4rem;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #012169;
+}
+
+.contact-text {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+/* .contact-form {
+  padding: 1rem;
+} */
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.contact-form input {
+  margin-top: 0.5rem;
+}
+
+.contact-form input:not([type="checkbox"]),
+.contact-form select {
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.contact-form input[type="checkbox"],
+.contact-form label[for="agree-terms"] {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid #012169;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-form input[type="checkbox"]:checked {
+  background-color: #012169;
+  border: #49a7e6;
+}
+
+.contact-form input.invalid,
+.contact-form :invalid {
+  border-color: red !important;
+}
+
+.contact-form button {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .contact-form {
+    margin: auto;
+    width: 25rem;
+  }
 }
