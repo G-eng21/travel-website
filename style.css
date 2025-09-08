@@ -100,6 +100,10 @@ body {
   border: none;
 }
 
+.header-nav__item--current a {
+  color: gray;
+}
+
 .footer {
   background: black;
   padding: 32px;
@@ -332,6 +336,21 @@ body {
 .contact-form button {
   display: block;
   margin-top: 1rem;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plan-table__item {
+  border: 0;
+  padding: 0;
+}
+
+.plan-table__item input:hover,
+.plan-table__item input:active {
+  background: lightgreen;
 }
 
 @media (min-width: 40rem) {
